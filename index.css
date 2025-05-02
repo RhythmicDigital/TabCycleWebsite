@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #1a73e8;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+#features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-around;
+}
+
+.feature {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 250px;
+}
+
+#lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+#lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+#lightbox:target {
+    display: flex;
+}
+.preview-images {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.preview-images img {
+    width: 45%;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.preview-images img:hover {
+    transform: scale(1.05);
+}
+  
+#upcoming ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+#how-to a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+#how-to a:hover {
+    text-decoration: underline;
+}
+
+#cta {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.install-button {
+    background-color: #1a73e8;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.install-button:hover {
+    background-color: #155ab6;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #e9ecef;
+    margin-top: 2rem;
+}
+
+header img {
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+    header img {
+    height: 24px;
+    margin-right: 6px;
+    }
+}
